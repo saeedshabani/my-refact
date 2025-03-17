@@ -1,0 +1,13 @@
+@use '../settings/mixins.scss' as *;
+
+.c-logo{
+    width: 208px;
+    @include respond-to(tablet) {  
+        width: 240px;
+        margin-bottom: 2rem;
+    }
+    @include respond-to(mobile) {  
+        width: 143px;
+        margin-bottom: 0;
+    }
+}

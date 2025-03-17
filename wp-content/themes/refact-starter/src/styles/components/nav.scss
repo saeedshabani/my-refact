@@ -1,0 +1,64 @@
+@use '../settings/mixins.scss' as *;
+
+.c-nav{
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+    @include respond-to(tablet) {  
+        margin-bottom: 0;
+        max-width: 100vw;
+        overflow: hidden;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    @include respond-to(mobile) {  
+        @include trans;
+        opacity: 1;
+        background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.85) 100%);
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        padding-top: 8.15rem;
+        padding-left: 3.2rem;
+        font-size: 1.1rem;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    &.is-active{
+        @include respond-to(mobile) {
+            opacity: 1;
+            visibility: visible;  
+            pointer-events: inherit;
+        }
+    }
+    a{
+        @include trans;
+        color: var(--wp--preset--color--white);
+        &:hover{
+            color: var(--wp--preset--color--primary);
+        }
+    }
+    &__menu{
+
+    }
+    &__list{
+        @include list-reset;
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+        @include respond-to(tablet) {  
+            gap: 1.85rem;
+        }
+        @include respond-to(mobile) {  
+            flex-direction: column;
+            gap: 2rem;
+        }
+    }
+    a{
+        text-decoration: none;
+        font-weight: lighter;
+    }
+}

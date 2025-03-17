@@ -1,10 +1,34 @@
 @use '../settings/mq.scss' as *;
 
 *, *::before, *::after {
-	box-sizing: inherit;
+	box-sizing: border-box;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+.o-container{
+  max-width: var(--wp--style--global--wide-size);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.o-flex{
+  display: flex;
+  &--col{
+    flex-direction: column;
+  }
+  &--center{
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.o-relative{
+  position: relative;
 }

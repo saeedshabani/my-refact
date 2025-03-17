@@ -1,0 +1,38 @@
+// Define the list reset mixin  
+@mixin list-reset {  
+    list-style: none;   // Removes bullets or numbering  
+    padding: 0;         // Removes default padding  
+    margin: 0;          // Removes default margin  
+}  
+
+@mixin trans {  
+    transition: all ease-in-out 0.2s;
+}
+
+// Mixin for media queries  
+@mixin respond-to($breakpoint) {  
+    @if $breakpoint == mobile {  
+      @media (max-width: 767px) {  
+        @content; // Insert styles here  
+      }  
+    }  
+    @else if $breakpoint == tablet {  
+      @media (max-width: 992px) {  
+        @content; // Insert styles here  
+      }  
+    }  
+}  
+
+@mixin button-reset {  
+    appearance: none; /* Remove default styling */  
+    background: none; /* Remove default background */  
+    border: none; /* Remove default border */  
+    padding: 0; /* Remove default padding */  
+    margin: 0; /* Remove default margin */  
+    font: inherit; /* Inherit font properties */  
+    color: inherit; /* Inherit text color */  
+    text-align: inherit; /* Inherit text alignment */  
+    text-decoration: none; /* Remove underline from links */  
+    outline: none; /* Remove outline */  
+    cursor: pointer;  
+}  

@@ -1,0 +1,161 @@
+@use '../settings/mixins.scss' as *;
+
+.c-hero{
+    display: flex;
+    position: relative;
+    background: #000;
+    padding-top: 3.75rem;
+    padding-bottom: 14rem;
+    color: var(--wp--preset--color--white);
+    @include respond-to(tablet) {  
+        padding-top: 3.2rem;
+        padding-bottom: 6.6rem;
+    }
+    @include respond-to(mobile) {  
+        padding-top: 1.2rem;
+        padding-bottom: 5.8rem;
+    }
+    &__bg{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        pointer-events: none;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;            
+        }
+        &::after{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            content: "";
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.67) 46.88%, rgba(0, 0, 0, 0) 100%);
+        }
+    }
+    &__bar{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-bottom: 8rem;
+        @include respond-to(tablet) {  
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 5.5rem;
+        }
+        @include respond-to(mobile) {  
+            flex-direction: row;
+            margin-bottom: 4rem;
+        }
+    }
+    &__content{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    &__title{
+        max-width: 584px;
+        font-size: 2.6rem;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);  
+        @include respond-to(tablet) {  
+            margin-bottom: 1.2rem;
+        }
+        @include respond-to(mobile) {  
+            font-size: 1.75rem;
+            max-width: 100%;
+            width: 320px;
+        }
+    }
+    &__text{
+        margin-top: 0;
+        margin-bottom: 3.5rem;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  
+        @include respond-to(tablet) {  
+            margin-bottom: 3rem;
+        }
+    }
+    &__btns{
+        gap: 2rem;
+        display: flex;
+        @include respond-to(tablet) {  
+            gap: 1rem;
+        }
+        @include respond-to(mobile) {  
+            flex-direction: column;
+            gap: 0.8rem;
+            width: 220px; 
+            max-width: 100%;
+        }
+    }
+    &__scroll{
+        display: none;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 50%;
+        width: 62px;
+        height: 62px;
+        margin-top: 6rem;
+        margin: 6rem auto 0 auto;
+        @include respond-to(tablet) {  
+            display: flex;
+        }
+        @include respond-to(mobile) {  
+            display: none;
+        }
+        svg{
+            width: auto;
+            height: 16px;
+            height: auto;
+            fill: var(--wp--preset--color--white);
+        }
+    }
+    .c-btn{
+        box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.3);
+    }
+    &__navBtn{
+        @include button-reset;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        svg{
+            width: 1.7rem;
+            height: 1.7rem;
+            fill: var(--wp--preset--color--white);
+        }
+        @include respond-to(mobile) {  
+            display: flex;
+        }
+    }
+    &__closeBtn{
+        @include button-reset;
+        display: none;
+        position: absolute;
+        right: 15px;
+        top: 3.1rem;
+        justify-content: center;
+        align-items: center;
+        svg{
+            width: 1.7rem;
+            height: 1.7rem;
+            fill: var(--wp--preset--color--white);
+        }
+        .is-active &{
+            @include respond-to(mobile) {  
+                display: flex;
+            }
+        }
+    }
+}

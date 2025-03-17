@@ -1,1 +1,1 @@
-(()=>{"use strict";document.addEventListener("DOMContentLoaded",(function(){}))})();
+(()=>{"use strict";document.addEventListener("DOMContentLoaded",(function(){var e=document.querySelector(".js-nav"),t=document.querySelector(".js-open-nav"),n=document.querySelector(".js-close-nav");t.addEventListener("click",(function(){e.classList.add("is-active")})),n.addEventListener("click",(function(){e.classList.remove("is-active")}))}))})();

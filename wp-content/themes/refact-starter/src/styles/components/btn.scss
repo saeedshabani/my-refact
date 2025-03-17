@@ -1,0 +1,30 @@
+@use '../settings/mixins.scss' as *;
+
+.c-btn{
+    @include trans();
+    display: inline-flex;
+    padding: 0.5rem 2.5rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    @include respond-to(mobile) {  
+        font-size: 1.2rem;
+    }
+    &--primary{
+        background: var(--wp--preset--color--primary);
+        color: var(--wp--preset--color--white);
+        &:hover{
+            background: var(--wp--preset--color--white);
+            color: var(--wp--preset--color--primary);
+        }
+    }
+    &--secondary{
+        background: var(--wp--preset--color--secondary);
+        color: var(--wp--preset--color--white);
+        &:hover{
+            background: var(--wp--preset--color--white);
+            color: var(--wp--preset--color--secondary);
+        }
+    }
+}
