@@ -1,0 +1,11 @@
+@use '../settings/mq.scss' as *;
+
+.wp-block-button__link svg {
+	vertical-align: middle;
+	fill: currentColor;
+}
+.wp-block-button{
+	.wp-block-button__link{
+		background-color: red;
+	}
+}
