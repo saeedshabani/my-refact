@@ -91,13 +91,14 @@ function disable_wp_emojis() {
 }
 add_action('init', 'disable_wp_emojis');
 
-function preload_fonts() {
+function preload_assets() {
     ?>
     <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/assets/fonts/Catamaran-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/assets/fonts/RobotoSlab-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="<?php echo get_template_directory_uri(); ?>/assets/images/hero-bg-mobile.webp" as="image" type="image/webp" />
     <?php
 }
-add_action('wp_head', 'preload_fonts');
+add_action('wp_head', 'preload_assets');
 
 // Block style
 require_once get_theme_file_path( 'inc/block-styles.php' );
