@@ -70,6 +70,8 @@
             gap: 2rem;
             @include respond-to(tablet) {
                 grid-template-columns: 1fr;
+                max-width: 620px;
+                margin: 0 auto;
             }
         }
         &__img{
@@ -77,6 +79,7 @@
             img{
                 display: block;
                 width: 100%;
+                margin: 0 auto;
             }
         }
         &__content{
@@ -87,6 +90,10 @@
             @include respond-to(tablet) {
                 padding: 0;
                 max-width: 480px;
+            }
+            @include respond-to(mobile) {
+                align-items: center;
+                text-align: center;
             }
         }
         &__title{

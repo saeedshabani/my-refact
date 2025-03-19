@@ -13,12 +13,11 @@
     <header class="c-hero">
         <div class="c-hero__bg">
             <picture>  
-                <!-- Source for mobile devices -->  
-                <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/hero-bg.webp">  
+                <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/hero-bg-mobile.webp">  
                 <!-- Source for tablet devices -->  
-                <source media="(min-width: 768px) and (max-width: 1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/hero-bg.webp">  
+                <source media="(min-width: 768px) and (max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/hero-bg-tablet.webp">  
                 <!-- Source for desktop devices -->  
-                <source media="(min-width: 1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/hero-bg.webp">  
+                <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/hero-bg.webp">  
                 <!-- Fallback image for browsers that do not support `<picture>` -->  
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-bg.webp" alt="">  
             </picture>  
@@ -27,7 +26,7 @@
             <div class="c-hero__bar">
                 <div class="c-logo">
                     <a class="c-logo__link" href="#">
-                        <img loading=" lazy" fetchpriority="low" class="c-logo__img" src="<?php echo get_template_directory_uri(); ?>/assets/images/resturant-logo.png" width="208" height="113" alt="Logo">
+                        <img fetchpriority="high" class="c-logo__img" src="<?php echo get_template_directory_uri(); ?>/assets/images/resturant-logo.webp" width="208" height="113" alt="Logo">
                     </a>
                 </div>
                 <button class="c-hero__navBtn js-open-nav">
@@ -99,14 +98,14 @@
                     <div class="o-grid__item">
                         <picture>  
                             <!-- Source for mobile devices -->  
-                            <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/cooking.webp">  
+                            <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/cooking-mobile.webp">  
                             <!-- Source for tablet devices -->  
-                            <source media="(min-width: 768px) and (max-width: 1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/cooking.webp">  
+                            <source media="(min-width: 768px) and (max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/cooking-tablet.webp">  
                             <!-- Source for desktop devices -->  
-                            <source media="(min-width: 1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/cooking.webp">  
+                            <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/cooking.webp">  
                             <!-- Fallback image for browsers that do not support `<picture>` -->  
-                            <img loading=" lazy" fetchpriority="low" src="<?php echo get_template_directory_uri(); ?>/assets/images/cooking.webp" alt="">  
-                        </picture> 
+                            <img width="480" height="555" loading="lazy" fetchpriority="low" src="<?php echo get_template_directory_uri(); ?>/assets/images/cooking.webp" alt="">  
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -421,13 +420,13 @@
                                     <div class="c-slider__slide__img">
                                         <picture>  
                                             <!-- Source for mobile devices -->  
-                                            <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/pork.webp">  
+                                            <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/pork-tablet.webp">  
                                             <!-- Source for tablet devices -->  
-                                            <source media="(min-width: 768px) and (max-width: 1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/pork.webp">  
+                                            <source media="(min-width: 768px) and (max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/pork-tablet.webp">  
                                             <!-- Source for desktop devices -->  
-                                            <source media="(min-width: 1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/pork.webp">  
+                                            <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/pork.webp">  
                                             <!-- Fallback image for browsers that do not support `<picture>` -->  
-                                            <img loading=" lazy" fetchpriority="low" src="<?php echo get_template_directory_uri(); ?>/assets/images/pork.webp" alt="">  
+                                            <img loading="lazy" width="584" height="386" fetchpriority="low" src="<?php echo get_template_directory_uri(); ?>/assets/images/pork.webp" alt="">  
                                         </picture> 
                                     </div>
                                 </div>
@@ -450,13 +449,13 @@
                                     <div class="c-slider__slide__img">
                                         <picture>  
                                             <!-- Source for mobile devices -->  
-                                            <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/pork.webp">  
+                                            <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/pork-tablet.webp">  
                                             <!-- Source for tablet devices -->  
-                                            <source media="(min-width: 768px) and (max-width: 1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/pork.webp">  
+                                            <source media="(min-width: 768px) and (max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/pork-tablet.webp"> 
                                             <!-- Source for desktop devices -->  
-                                            <source media="(min-width: 1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/pork.webp">  
+                                            <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/pork.webp">  
                                             <!-- Fallback image for browsers that do not support `<picture>` -->  
-                                            <img loading=" lazy" fetchpriority="low" src="<?php echo get_template_directory_uri(); ?>/assets/images/pork.webp" alt="">  
+                                            <img loading="lazy" width="584" height="386" fetchpriority="low" src="<?php echo get_template_directory_uri(); ?>/assets/images/pork.webp" alt="">  
                                         </picture> 
                                     </div>
                                 </div>
@@ -479,13 +478,13 @@
                                     <div class="c-slider__slide__img">
                                         <picture>  
                                             <!-- Source for mobile devices -->  
-                                            <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/pork.webp">  
+                                            <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/pork-tablet.webp">  
                                             <!-- Source for tablet devices -->  
-                                            <source media="(min-width: 768px) and (max-width: 1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/pork.webp">  
+                                            <source media="(min-width: 768px) and (max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/pork-tablet.webp">  
                                             <!-- Source for desktop devices -->  
-                                            <source media="(min-width: 1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/pork.webp">  
+                                            <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/pork.webp">  
                                             <!-- Fallback image for browsers that do not support `<picture>` -->  
-                                            <img loading=" lazy" fetchpriority="low" src="<?php echo get_template_directory_uri(); ?>/assets/images/pork.webp" alt="">  
+                                            <img loading="lazy" width="584" height="386" fetchpriority="low" src="<?php echo get_template_directory_uri(); ?>/assets/images/pork.webp" alt="">  
                                         </picture> 
                                     </div>
                                 </div>
@@ -512,14 +511,14 @@
         <div class="c-book__bg">
             <picture>  
                 <!-- Source for mobile devices -->  
-                <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/book-bg.webp">  
+                <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/book-bg-mobile.webp">  
                 <!-- Source for tablet devices -->  
-                <source media="(min-width: 768px) and (max-width: 1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/book-bg.webp">  
+                <source media="(min-width: 768px) and (max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/book-bg-tablet.webp">  
                 <!-- Source for desktop devices -->  
-                <source media="(min-width: 1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/book-bg.webp">  
+                <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/book-bg.webp">  
                 <!-- Fallback image for browsers that do not support `<picture>` -->  
-                <img loading=" lazy" fetchpriority="low" src="<?php echo get_template_directory_uri(); ?>/assets/images/book-bg.webp" alt="">  
-            </picture>  
+                <img loading="lazy" width="1918" height="1278" fetchpriority="low" src="<?php echo get_template_directory_uri(); ?>/assets/images/book-bg.webp" alt="">  
+            </picture>
         </div>
         <div class="o-container o-relative">
             <div class="o-grid">
