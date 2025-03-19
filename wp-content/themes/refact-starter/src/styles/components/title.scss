@@ -1,0 +1,28 @@
+@use '../settings/mixins.scss' as *;
+
+.c-title{
+    position: relative;
+    font-size: 2rem;
+    margin-top: 0;
+    padding-bottom: 0.4rem;
+    margin-bottom: 2.4rem;
+    @include respond-to(tablet) {  
+        text-align: center;
+    }
+    @include respond-to(mobile) {  
+        font-size: 1.7rem;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        display: block;
+        left: 0;
+        bottom: 0;
+        width: 2.2rem;
+        border-bottom: 4px solid var(--wp--preset--color--dark-orange);
+        @include respond-to(tablet) {  
+            left: 50%;
+            margin-left: -1.1rem;
+        }  
+    }
+}

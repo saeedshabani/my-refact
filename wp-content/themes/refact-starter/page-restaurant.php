@@ -14,13 +14,13 @@
         <div class="c-hero__bg">
             <picture>  
                 <!-- Source for mobile devices -->  
-                <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/hero-bg.png">  
+                <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/hero-bg.webp">  
                 <!-- Source for tablet devices -->  
-                <source media="(min-width: 768px) and (max-width: 1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/hero-bg.png">  
+                <source media="(min-width: 768px) and (max-width: 1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/hero-bg.webp">  
                 <!-- Source for desktop devices -->  
-                <source media="(min-width: 1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/hero-bg.png">  
+                <source media="(min-width: 1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/hero-bg.webp">  
                 <!-- Fallback image for browsers that do not support `<picture>` -->  
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-bg.png" alt="">  
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-bg.webp" alt="">  
             </picture>  
         </div>
         <div class="o-container o-relative o-flex o-flex--col">
@@ -86,6 +86,32 @@
         </div>
     </header>
 
+    <section class="c-block c-block--overlay-col">
+        <div class="o-container">
+            <div class="c-block__box">
+                <div class="o-grid o-grid--2col">
+                    <div class="o-grid__item">
+                        <h2 class="c-title">Why Customers Like us?</h2>
+                        <p>When we first opened our restaturant, it didn't take a long time ofr us to prove our diffrence.</p>
+                        <p>Our native chefs, the Chinese atmosphere of the restaturant, the variety of dishes, the high quality of foods, and affordable prices made us well-known very soon. </p>
+                        <p>Today, we have customers not only from this area but also from other cities.</p>
+                    </div>
+                    <div class="o-grid__item">
+                        <picture>  
+                            <!-- Source for mobile devices -->  
+                            <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/cooking.webp">  
+                            <!-- Source for tablet devices -->  
+                            <source media="(min-width: 768px) and (max-width: 1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/cooking.webp">  
+                            <!-- Source for desktop devices -->  
+                            <source media="(min-width: 1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/cooking.webp">  
+                            <!-- Fallback image for browsers that do not support `<picture>` -->  
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cooking.webp" alt="">  
+                        </picture> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <?php wp_footer(); ?>
 </body>

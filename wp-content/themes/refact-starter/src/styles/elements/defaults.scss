@@ -1,7 +1,15 @@
 @use '../settings/mq.scss' as *;
+@use '../settings/mixins.scss' as *;
 
 *, *::before, *::after {
 	box-sizing: border-box;
+}
+
+p {
+  margin: 0 0 1rem 0;
+  &:last-child{
+    margin-bottom: 0;
+  }
 }
 
 img {
@@ -16,6 +24,14 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  @include respond-to(tablet) { 
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+  @include respond-to(mobile) { 
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .o-flex{
@@ -31,4 +47,18 @@ img {
 
 .o-relative{
   position: relative;
+}
+
+.o-grid{
+  display: grid;
+  gap: 16px; /* Adjust the gap between items as needed */  
+  &--2col {  
+      // grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */ 
+      // grid-template-columns: 1fr 480px; /* Left column takes remaining space, right column is fixed at 480px */  
+      // grid-template-columns: 480px 80px 480px; /* Desktop view */  
+      // gap: 80px; /* Space between columns */  
+      // @include respond-to(tablet) {  
+      //   grid-template-columns: 1fr;
+      // }
+  }
 }
