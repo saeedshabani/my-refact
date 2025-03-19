@@ -31,4 +31,8 @@
             color: var(--wp--preset--color--secondary);
         }
     }
+    &--full{
+        width: 100%;
+        padding: 0.7rem 0;
+    }
 }

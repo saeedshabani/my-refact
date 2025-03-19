@@ -529,7 +529,7 @@
                 </div>
                 <div class="o-grid__col c-book__form">
                     <div class="c-book__box o-box">
-                        <form action="" method="post" class="c-form">
+                        <form action="" method="post" class="c-form js-book-form">
                             <div class="c-form__filed">
                                 <label class="c-form__lable" for="book-name">your name</label>
                                 <input class="c-form__input" id="book-name" type="text">
@@ -621,6 +621,37 @@
     <footer class="c-footer">
         <p>All rights are reserved for Mercadito Restaurant © 2019</p>
     </footer>
+
+    <div class="o-page-overlay js-page-overlay">
+    </div>
+
+    <div class="c-modal c-modal--success js-modal--success js-modal">
+        <div class="c-modal__wrapper">
+            <div class="c-modal__icon">
+                <svg width="44" height="32" viewBox="0 0 44 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 17.1286L14.2835 29.1698L42 2" stroke-width="4"/>
+                </svg>
+
+            
+            </div>
+            <strong class="c-modal__title">Thank You</strong>
+            <p class="c-modal__text">Your reservasion has bee received, we’ll be happy to see you.</p>
+            <button class="c-btn c-btn--secondary c-btn--full c-modal__btn js-confirm-modal">OK</button>
+        </div>
+    </div>
+
+    <div class="c-modal c-modal--failed js-modal--failed js-modal">
+        <div class="c-modal__wrapper">
+            <div class="c-modal__icon">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 31.7041L17 17M32 2.29588L17 17M17 17L2 2L32 31.7041" stroke-width="4"/>
+                </svg>
+            </div>
+            <strong class="c-modal__title">We’ve a Problem</strong>
+            <p class="c-modal__text">Unfourtunately a problem occured during the operation. We’re so sorry for the inconvenience.</p>
+            <button class="c-btn c-btn--secondary c-btn--full c-modal__btn js-confirm-modal">OK</button>
+        </div>
+    </div>
 
     <?php wp_footer(); ?>
 </body>
