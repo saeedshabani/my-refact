@@ -1,13 +1,16 @@
 @use 'elements/defaults.scss';
+@use 'plugins/Flickity.scss';
 
 @use 'components/section.scss';
 @use 'components/btn.scss';
+@use 'components/price.scss';
 @use 'components/title.scss';
 @use 'components/block.scss';
 @use 'components/logo.scss';
 @use 'components/nav.scss';
 @use 'components/hero.scss';
 @use 'components/menu.scss';
+@use 'components/slider.scss';
 
 @use 'partials/header.scss';
 @use 'partials/footer.scss';

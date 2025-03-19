@@ -81,6 +81,7 @@
             display: block;
             font-size: 1.1rem;
             margin-bottom: 1.1rem;
+            color: var(--wp--preset--color--white);
             @include respond-to(tablet) {
                 font-size: 1.3rem;
                 margin-bottom: 0.7rem;

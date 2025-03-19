@@ -6,6 +6,7 @@
     margin-top: 0;
     padding-bottom: 0.4rem;
     margin-bottom: 2.4rem;
+    color: var(--wp--preset--color--white);
     @include respond-to(tablet) {  
         text-align: center;
     }

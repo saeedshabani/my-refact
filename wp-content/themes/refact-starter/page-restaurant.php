@@ -394,6 +394,120 @@
         </div>
     </section>
 
+    <section class="c-block">
+        <div class="o-container">
+            <div class="c-block__box">
+                <div class="c-slider">
+                    <div class="c-slider__top">
+                        <div class="c-title">The Most Popular Dishes</div>
+                        <div class="c-slider__nav">
+                            <button class="c-slider__nav__btn js-btn-prev">
+                                <svg width="30" height="13" viewBox="0 0 30 13" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.223408 5.93606L6.06905 0.218059C6.36597 -0.0726864 6.84228 -0.0726864 7.1392 0.218059C7.43612 0.508805 7.43612 0.975209 7.1392 1.26596L2.58641 5.72406H28.4928C28.9134 5.72406 29.2537 6.0572 29.2537 6.46909C29.2537 6.88098 28.9134 7.21413 28.4928 7.21413H2.58641L7.1392 11.6601C7.43612 11.9509 7.43612 12.4173 7.1392 12.708C6.99074 12.8534 6.79898 12.9261 6.60103 12.9261C6.40308 12.9261 6.21132 12.8534 6.06286 12.708L0.21722 6.98395C-0.0735149 6.69927 -0.0735149 6.2268 0.223408 5.93606Z"/>
+                                </svg>
+                            </button>
+                            <div class="c-slider__nav__stats"><span class="c-slider__nav__current js-carousel-slide">1</span><span>/</span><span>3</span></div>
+                            <button class="c-slider__nav__btn js-btn-next">
+                                <svg width="30" height="13" viewBox="0 0 30 13" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M29.2839 5.93606L23.4383 0.218059C23.1414 -0.0726864 22.665 -0.0726864 22.3681 0.218059C22.0712 0.508805 22.0712 0.975209 22.3681 1.26596L26.9209 5.72406H1.01452C0.593885 5.72406 0.253662 6.0572 0.253662 6.46909C0.253662 6.88098 0.593885 7.21413 1.01452 7.21413H26.9209L22.3681 11.6601C22.0712 11.9509 22.0712 12.4173 22.3681 12.708C22.5166 12.8534 22.7083 12.9261 22.9063 12.9261C23.1042 12.9261 23.296 12.8534 23.4445 12.708L29.2901 6.98395C29.5808 6.69927 29.5808 6.2268 29.2839 5.93606Z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="js-carousel">
+                        <div class="c-slider__slide">
+                            <div class="o-grid">
+                                <div class="o-grid__col">
+                                    <div class="c-slider__slide__img">
+                                        <picture>  
+                                            <!-- Source for mobile devices -->  
+                                            <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/pork.webp">  
+                                            <!-- Source for tablet devices -->  
+                                            <source media="(min-width: 768px) and (max-width: 1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/pork.webp">  
+                                            <!-- Source for desktop devices -->  
+                                            <source media="(min-width: 1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/pork.webp">  
+                                            <!-- Fallback image for browsers that do not support `<picture>` -->  
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pork.webp" alt="">  
+                                        </picture> 
+                                    </div>
+                                </div>
+                                <div class="o-grid__col c-slider__slide__content">
+                                    <h2 class="c-slider__slide__title">Sweet and sour pork</h2>
+                                    <div class="c-slider__slide__text">
+                                        <p>Sweet and Sour Pork Tenderloin is one of the classic cuisines in China. Pork tenderloin is the main material of this dish.</p>
+                                        <p>The dish tastes sour and sweet, but also crispy outside and soft inside, which can stimulate people’s appetite.</p>
+                                    </div>
+                                    <div class="c-price">
+                                        <span class="c-price__symbol">$</span>
+                                        <span class="c-price__amount">36</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-slider__slide">
+                            <div class="o-grid">
+                                <div class="o-grid__col">
+                                    <div class="c-slider__slide__img">
+                                        <picture>  
+                                            <!-- Source for mobile devices -->  
+                                            <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/pork.webp">  
+                                            <!-- Source for tablet devices -->  
+                                            <source media="(min-width: 768px) and (max-width: 1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/pork.webp">  
+                                            <!-- Source for desktop devices -->  
+                                            <source media="(min-width: 1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/pork.webp">  
+                                            <!-- Fallback image for browsers that do not support `<picture>` -->  
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pork.webp" alt="">  
+                                        </picture> 
+                                    </div>
+                                </div>
+                                <div class="o-grid__col c-slider__slide__content">
+                                    <h2 class="c-slider__slide__title">Sweet and sour pork</h2>
+                                    <div class="c-slider__slide__text">
+                                        <p>Sweet and Sour Pork Tenderloin is one of the classic cuisines in China. Pork tenderloin is the main material of this dish.</p>
+                                        <p>The dish tastes sour and sweet, but also crispy outside and soft inside, which can stimulate people’s appetite.</p>
+                                    </div>
+                                    <div class="c-price">
+                                        <span class="c-price__symbol">$</span>
+                                        <span class="c-price__amount">36</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-slider__slide">
+                            <div class="o-grid">
+                                <div class="o-grid__col">
+                                    <div class="c-slider__slide__img">
+                                        <picture>  
+                                            <!-- Source for mobile devices -->  
+                                            <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/pork.webp">  
+                                            <!-- Source for tablet devices -->  
+                                            <source media="(min-width: 768px) and (max-width: 1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/pork.webp">  
+                                            <!-- Source for desktop devices -->  
+                                            <source media="(min-width: 1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/pork.webp">  
+                                            <!-- Fallback image for browsers that do not support `<picture>` -->  
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pork.webp" alt="">  
+                                        </picture> 
+                                    </div>
+                                </div>
+                                <div class="o-grid__col c-slider__slide__content">
+                                    <h2 class="c-slider__slide__title">Sweet and sour pork</h2>
+                                    <div class="c-slider__slide__text">
+                                        <p>Sweet and Sour Pork Tenderloin is one of the classic cuisines in China. Pork tenderloin is the main material of this dish.</p>
+                                        <p>The dish tastes sour and sweet, but also crispy outside and soft inside, which can stimulate people’s appetite.</p>
+                                    </div>
+                                    <div class="c-price">
+                                        <span class="c-price__symbol">$</span>
+                                        <span class="c-price__amount">36</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <?php wp_footer(); ?>
 </body>
 </html>
