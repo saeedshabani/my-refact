@@ -190,8 +190,6 @@ import mapboxgl from 'mapbox-gl';
           break;
       }
 
-      console.log('showModal',modal_type,modal);
-
       const overlay = document.querySelector(".js-page-overlay");
 
       if (modal && overlay) {
@@ -204,9 +202,6 @@ import mapboxgl from 'mapbox-gl';
     const hideModal = () => {
       const modal = document.querySelector(".js-modal.is-active");
       const overlay = document.querySelector(".js-page-overlay.is-active");
-      console.log('modal',modal);
-      console.log('overlay',overlay);
-    
       if (modal && overlay) {
         modal.classList.remove("is-active");
         overlay.classList.remove("is-active");
@@ -220,7 +215,6 @@ import mapboxgl from 'mapbox-gl';
     
     // Listen for form submission and show the modal
     const form = document.querySelector(".js-book-form");
-    console.log('fooorm',form);
     if (form) {
       form.addEventListener("submit",  (e) => {
         e.preventDefault(); // Prevent actual form submission
