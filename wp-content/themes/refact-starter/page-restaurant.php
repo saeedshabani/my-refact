@@ -113,6 +113,287 @@
         </div>
     </section>
 
+    <section class="c-block">
+        <div class="o-container">
+            <div class="c-block__box">
+                <div class="c-menu">
+                    <div class="c-menu__nav">
+                        <h2 class="c-menu__title c-title">Our Menu</h2>
+                        <ul class="c-menu__nav__items">
+                            <li class="c-menu__nav__item"><a class="c-menu__nav__link js-menu-nav-link is-active" data-menu-id="starter" href="#">starter</a></li>
+                            <li class="c-menu__nav__item"><a class="c-menu__nav__link js-menu-nav-link" data-menu-id="main-dishes" href="#">main dishes</a></li>
+                            <li class="c-menu__nav__item"><a class="c-menu__nav__link js-menu-nav-link" data-menu-id="desserts" href="#">desserts</a></li>
+                        </ul>
+                    </div>
+                    <!-- starter -->
+                    <div class="c-menu__items js-menu-items" data-menu-id="starter">
+                       <div class="c-menu__item">
+                            <div class="c-menu__item__content">
+                                <strong class="c-menu__item__name">Pork Wontons</strong>
+                                <p class="c-menu__item__desc">Pork, chestnuts, bamboo shoots, spring onion egg, wontonr</p>
+                            </div>
+                            <div class="c-menu__item__price">
+                                <div class="c-price">
+                                    <span class="c-price__symbol">$</span>
+                                    <span class="c-price__amount">30</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-menu__item">
+                            <div class="c-menu__item__content">
+                                <strong class="c-menu__item__name">Real Kung Pao chicken</strong>
+                                <p class="c-menu__item__desc">Peanuts, chicken tights, rice wine, cornflour, soy sauce, chillies</p>
+                            </div>
+                            <div class="c-menu__item__price">
+                                <div class="c-price">
+                                    <span class="c-price__symbol">$</span>
+                                    <span class="c-price__amount">18</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-menu__item">
+                            <div class="c-menu__item__content">
+                                <strong class="c-menu__item__name">Stir Fried Tofu with Rice</strong>
+                                <p class="c-menu__item__desc">Tofu, rice, vinger, soy sauce, seasmae oil, ginger</p>
+                            </div>
+                            <div class="c-menu__item__price">
+                                <div class="c-price">
+                                    <span class="c-price__symbol">$</span>
+                                    <span class="c-price__amount">25</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-menu__item">
+                            <div class="c-menu__item__content">
+                                <strong class="c-menu__item__name">Chinese pepper steak</strong>
+                                <p class="c-menu__item__desc">Steak, pepper, vinger wine, ginger</p>
+                            </div>
+                            <div class="c-menu__item__price">
+                                <div class="c-price">
+                                    <span class="c-price__symbol">$</span>
+                                    <span class="c-price__amount">15</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-menu__item">
+                            <div class="c-menu__item__content">
+                                <strong class="c-menu__item__name">Chicken with Chestnuts</strong>
+                                <p class="c-menu__item__desc">Chicken, chestnuts, soy sauce, vinger</p>
+                            </div>
+                            <div class="c-menu__item__price">
+                                <div class="c-price">
+                                    <span class="c-price__symbol">$</span>
+                                    <span class="c-price__amount">19</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-menu__item">
+                            <div class="c-menu__item__content">
+                                <strong class="c-menu__item__name">Honey Walnut Shrimp</strong>
+                                <p class="c-menu__item__desc">Wulnuts, mayonnaise, prawns, honey, egg, rice flour</p>
+                            </div>
+                            <div class="c-menu__item__price">
+                                <div class="c-price">
+                                    <span class="c-price__symbol">$</span>
+                                    <span class="c-price__amount">15</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-menu__item">
+                            <div class="c-menu__item__content">
+                                <strong class="c-menu__item__name">Kung Pao chicken</strong>
+                                <p class="c-menu__item__desc">Chicken tights, shaoxing wine, soy sauce, chilli, peanuts, cucumber</p>
+                            </div>
+                            <div class="c-menu__item__price">
+                                <div class="c-price">
+                                    <span class="c-price__symbol">$</span>
+                                    <span class="c-price__amount">29</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-menu__item">
+                            <div class="c-menu__item__content">
+                                <strong class="c-menu__item__name">Tsao's chicken</strong>
+                                <p class="c-menu__item__desc">Chicken tights, rice vinger, rice wine, orange zest, banana ketchup, garlic</p>
+                            </div>
+                            <div class="c-menu__item__price">
+                                <div class="c-price">
+                                    <span class="c-price__symbol">$</span>
+                                    <span class="c-price__amount">35</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-menu__item">
+                            <div class="c-menu__item__content">
+                                <strong class="c-menu__item__name">Chinese Steamed Halibut</strong>
+                                <p class="c-menu__item__desc">Fillet halibut, ginger, coriander, soy sauce</p>
+                            </div>
+                            <div class="c-menu__item__price">
+                                <div class="c-price">
+                                    <span class="c-price__symbol">$</span>
+                                    <span class="c-price__amount">19</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- main-dishes -->
+                    <div class="c-menu__items js-menu-items" data-menu-id="main-dishes" style="display: none;">
+                        <div class="c-menu__item">
+                            <div class="c-menu__item__content">
+                                <strong class="c-menu__item__name">Pork Wontons main dishes</strong>
+                                <p class="c-menu__item__desc">Pork, chestnuts, bamboo shoots, spring onion egg, wontonr</p>
+                            </div>
+                            <div class="c-menu__item__price">
+                                <div class="c-price">
+                                    <span class="c-price__symbol">$</span>
+                                    <span class="c-price__amount">30</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-menu__item">
+                            <div class="c-menu__item__content">
+                                <strong class="c-menu__item__name">Real Kung Pao chicken main dishes</strong>
+                                <p class="c-menu__item__desc">Peanuts, chicken tights, rice wine, cornflour, soy sauce, chillies</p>
+                            </div>
+                            <div class="c-menu__item__price">
+                                <div class="c-price">
+                                    <span class="c-price__symbol">$</span>
+                                    <span class="c-price__amount">18</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-menu__item">
+                            <div class="c-menu__item__content">
+                                <strong class="c-menu__item__name">Stir Fried Tofu with Rice main dishes</strong>
+                                <p class="c-menu__item__desc">Tofu, rice, vinger, soy sauce, seasmae oil, ginger</p>
+                            </div>
+                            <div class="c-menu__item__price">
+                                <div class="c-price">
+                                    <span class="c-price__symbol">$</span>
+                                    <span class="c-price__amount">25</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-menu__item">
+                            <div class="c-menu__item__content">
+                                <strong class="c-menu__item__name">Chicken with Chestnuts main dishes</strong>
+                                <p class="c-menu__item__desc">Chicken, chestnuts, soy sauce, vinger</p>
+                            </div>
+                            <div class="c-menu__item__price">
+                                <div class="c-price">
+                                    <span class="c-price__symbol">$</span>
+                                    <span class="c-price__amount">19</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-menu__item">
+                            <div class="c-menu__item__content">
+                                <strong class="c-menu__item__name">Honey Walnut Shrimp main dishes</strong>
+                                <p class="c-menu__item__desc">Wulnuts, mayonnaise, prawns, honey, egg, rice flour</p>
+                            </div>
+                            <div class="c-menu__item__price">
+                                <div class="c-price">
+                                    <span class="c-price__symbol">$</span>
+                                    <span class="c-price__amount">15</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-menu__item">
+                            <div class="c-menu__item__content">
+                                <strong class="c-menu__item__name">Kung Pao chicken main dishes</strong>
+                                <p class="c-menu__item__desc">Chicken tights, shaoxing wine, soy sauce, chilli, peanuts, cucumber</p>
+                            </div>
+                            <div class="c-menu__item__price">
+                                <div class="c-price">
+                                    <span class="c-price__symbol">$</span>
+                                    <span class="c-price__amount">29</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- deserts -->
+                    <div class="c-menu__items js-menu-items" data-menu-id="desserts" style="display: none;">
+                        <div class="c-menu__item">
+                            <div class="c-menu__item__content">
+                                <strong class="c-menu__item__name">Pork Wontons desert</strong>
+                                <p class="c-menu__item__desc">Pork, chestnuts, bamboo shoots, spring onion egg, wontonr</p>
+                            </div>
+                            <div class="c-menu__item__price">
+                                <div class="c-price">
+                                    <span class="c-price__symbol">$</span>
+                                    <span class="c-price__amount">30</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-menu__item">
+                            <div class="c-menu__item__content">
+                                <strong class="c-menu__item__name">Real Kung Pao chicken desert</strong>
+                                <p class="c-menu__item__desc">Peanuts, chicken tights, rice wine, cornflour, soy sauce, chillies</p>
+                            </div>
+                            <div class="c-menu__item__price">
+                                <div class="c-price">
+                                    <span class="c-price__symbol">$</span>
+                                    <span class="c-price__amount">18</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-menu__item">
+                            <div class="c-menu__item__content">
+                                <strong class="c-menu__item__name">Stir Fried Tofu with Rice desert</strong>
+                                <p class="c-menu__item__desc">Tofu, rice, vinger, soy sauce, seasmae oil, ginger</p>
+                            </div>
+                            <div class="c-menu__item__price">
+                                <div class="c-price">
+                                    <span class="c-price__symbol">$</span>
+                                    <span class="c-price__amount">25</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-menu__item">
+                            <div class="c-menu__item__content">
+                                <strong class="c-menu__item__name">Kung Pao chicken desert</strong>
+                                <p class="c-menu__item__desc">Chicken tights, shaoxing wine, soy sauce, chilli, peanuts, cucumber</p>
+                            </div>
+                            <div class="c-menu__item__price">
+                                <div class="c-price">
+                                    <span class="c-price__symbol">$</span>
+                                    <span class="c-price__amount">29</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-menu__item">
+                            <div class="c-menu__item__content">
+                                <strong class="c-menu__item__name">Tsao's chicken desert</strong>
+                                <p class="c-menu__item__desc">Chicken tights, rice vinger, rice wine, orange zest, banana ketchup, garlic</p>
+                            </div>
+                            <div class="c-menu__item__price">
+                                <div class="c-price">
+                                    <span class="c-price__symbol">$</span>
+                                    <span class="c-price__amount">35</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-menu__item">
+                            <div class="c-menu__item__content">
+                                <strong class="c-menu__item__name">Chinese Steamed Halibut desert</strong>
+                                <p class="c-menu__item__desc">Fillet halibut, ginger, coriander, soy sauce</p>
+                            </div>
+                            <div class="c-menu__item__price">
+                                <div class="c-price">
+                                    <span class="c-price__symbol">$</span>
+                                    <span class="c-price__amount">19</span>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="o-flex">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <?php wp_footer(); ?>
 </body>
 </html>

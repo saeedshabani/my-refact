@@ -23,5 +23,32 @@
     navBtn.addEventListener('click', openNav);  
     closeBtn.addEventListener('click', closeNav);  
 
+
+    document.querySelectorAll('.js-menu-nav-link').forEach(link => {  
+      link.addEventListener('click', function(e) {  
+          e.preventDefault(); // Prevent the default anchor click behavior  
+  
+          const menuId = this.getAttribute('data-menu-id'); // Get the data-menu-id value  
+
+          // Hide all menu items first  
+          document.querySelectorAll('.js-menu-items').forEach(item => {  
+              item.style.display = 'none'; // Change to 'display: none;' to hide  
+          });  
+  
+          // Show only the items that match the selected menu id  
+          document.querySelectorAll(`.js-menu-items[data-menu-id="${menuId}"]`).forEach(item => {  
+              item.style.display = 'block'; // Change to 'display: block;' to show  
+          });  
+  
+          // Remove is-active class from all links  
+          document.querySelectorAll('.js-menu-nav-link').forEach(link => {  
+              link.classList.remove('is-active');  
+          });  
+  
+          // Add is-active class to the clicked link  
+          this.classList.add('is-active');  
+      });  
+  });  
+
   });
 })();

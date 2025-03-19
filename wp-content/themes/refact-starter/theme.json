@@ -45,9 +45,19 @@
 					"name": "Light-gray"
 				},
 				{
+					"slug": "light-gray-2",
+					"color": "#A3A3A3",
+					"name": "Light-gray-2"
+				},
+				{
 					"slug": "dark-gray",
 					"color": "#181110",
 					"name": "Dark-gray"
+				},
+				{
+					"slug": "dark-gray-2",
+					"color": "#262626",
+					"name": "Dark-gray-2"
 				},
 				{
 					"slug": "medium-gray",

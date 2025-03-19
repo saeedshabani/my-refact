@@ -11,6 +11,11 @@
 
 // Mixin for media queries  
 @mixin respond-to($breakpoint) {  
+    @if $breakpoint == smallMobile {  
+      @media (max-width: 481px) {  
+        @content; // Insert styles here  
+      }  
+    }  
     @if $breakpoint == mobile {  
       @media (max-width: 767px) {  
         @content; // Insert styles here  
