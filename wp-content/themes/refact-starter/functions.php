@@ -72,7 +72,32 @@ function refact_starter_admin_assets() {
 	wp_register_script( 'refact-starter-flickity', get_theme_file_uri( 'assets/scripts/flickity.js' ), array(), $theme_version, true );
 }
 add_action( 'admin_enqueue_scripts', 'refact_starter_admin_assets' );
+function add_defer_to_all_scripts($tag) {
+    return str_replace(' src', ' defer src', $tag);
+}
+add_filter('script_loader_tag', 'add_defer_to_all_scripts', 10);
 
+function remove_script_version($src) {
+    return remove_query_arg('ver', $src);
+}
+add_filter('style_loader_src', 'remove_script_version', 10, 2);
+add_filter('script_loader_src', 'remove_script_version', 10, 2);
+
+function disable_wp_emojis() {
+    remove_action('wp_head', 'print_emoji_detection_script', 7);
+    remove_action('wp_print_styles', 'print_emoji_styles');
+    remove_action('admin_print_scripts', 'print_emoji_detection_script');
+    remove_action('admin_print_styles', 'print_emoji_styles');
+}
+add_action('init', 'disable_wp_emojis');
+
+function preload_fonts() {
+    ?>
+    <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/assets/fonts/Catamaran-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/assets/fonts/RobotoSlab-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <?php
+}
+add_action('wp_head', 'preload_fonts');
 
 // Block style
 require_once get_theme_file_path( 'inc/block-styles.php' );
