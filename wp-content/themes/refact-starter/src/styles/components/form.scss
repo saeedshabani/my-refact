@@ -39,6 +39,7 @@
             font-size: 0.85rem;
         }
     }
+    input,
     &__input{
         @include trans;
         border: 1px solid var(--wp--preset--color--white);
@@ -69,6 +70,8 @@
                 background-position: center;
             }
         }
+    }
+    &__input{
         &__number{
             position: relative;
             input{
