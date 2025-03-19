@@ -90,6 +90,7 @@
             @include respond-to(tablet) {
                 padding: 0;
                 max-width: 480px;
+                margin: 0 auto;
             }
             @include respond-to(mobile) {
                 align-items: center;
