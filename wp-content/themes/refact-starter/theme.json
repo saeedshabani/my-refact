@@ -60,6 +60,11 @@
 					"name": "Dark-gray-2"
 				},
 				{
+					"slug": "gray",
+					"color": "#909090",
+					"name": "Gray"
+				},
+				{
 					"slug": "medium-gray",
 					"color": "#8D8D8D",
 					"name": "Medium-gray"

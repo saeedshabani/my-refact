@@ -52,4 +52,14 @@ img {
 .o-grid{
   display: grid;
   gap: 16px; /* Adjust the gap between items as needed */ 
+  grid-template-columns: 1fr 1fr;
+}
+
+.o-box{
+  background: var(--wp--preset--color--dark-gray);
+  border: 1px solid var(--wp--preset--color--medium-gray);
+  @include respond-to(mobile) { 
+      border-right: none;
+      border-left: none;
+  }
 }

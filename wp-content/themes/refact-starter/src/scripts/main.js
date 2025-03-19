@@ -134,5 +134,28 @@ import Flickity from 'flickity';
   // Initial call to set button states on page load  
   updateFlktyButtonStates();  
 
+  const input = document.querySelector(".js-book-number");
+  const increaseBtn = document.querySelector(".js-input-increase-btn");
+  const decreaseBtn = document.querySelector(".js-input-decrease-btn");
+
+  increaseBtn.addEventListener("click",  (e) => {
+    e.preventDefault();
+      let currentValue = parseInt(input.value, 10);
+      let step = parseInt(input.step, 10) || 1;
+      input.value = currentValue + step;
+  });
+
+  decreaseBtn.addEventListener("click",  (e) => {
+    e.preventDefault();
+      let currentValue = parseInt(input.value, 10);
+      let step = parseInt(input.step, 10) || 1;
+      let min = parseInt(input.min, 10) || 1;
+
+      if (currentValue > min) {
+          input.value = currentValue - step;
+      }
+  });
+
+
   });
 })();

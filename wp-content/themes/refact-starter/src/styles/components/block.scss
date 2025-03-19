@@ -7,17 +7,16 @@
     @include respond-to(mobile) { 
         margin-bottom: 2.4rem;
     }
+    &--no-margin-bottom{
+        margin-bottom: 0;
+    }
     &__box{
-        background: var(--wp--preset--color--dark-gray);
         padding: 5.2rem 5.2rem;
-        border: 1px solid var(--wp--preset--color--medium-gray);
         @include respond-to(tablet) { 
             padding: 4.15rem 2rem;
         }
         @include respond-to(mobile) { 
             padding: 3.2rem 1.25rem;
-            border-right: none;
-            border-left: none;
         }
     }
     &__title{

@@ -88,7 +88,7 @@
 
     <section class="c-block c-block--overlay-col">
         <div class="o-container">
-            <div class="c-block__box">
+            <div class="c-block__box o-box">
                 <div class="o-grid">
                     <div class="o-grid__item">
                         <h2 class="c-title">Why Customers Like us?</h2>
@@ -115,7 +115,7 @@
 
     <section class="c-block">
         <div class="o-container">
-            <div class="c-block__box">
+            <div class="c-block__box o-box">
                 <div class="c-menu">
                     <div class="c-menu__nav">
                         <h2 class="c-menu__title c-title">Our Menu</h2>
@@ -394,9 +394,9 @@
         </div>
     </section>
 
-    <section class="c-block">
+    <section class="c-block c-block--no-margin-bottom">
         <div class="o-container">
-            <div class="c-block__box">
+            <div class="c-block__box o-box">
                 <div class="c-slider">
                     <div class="c-slider__top">
                         <div class="c-title">The Most Popular Dishes</div>
@@ -507,6 +507,73 @@
             </div>
         </div>
     </section>
+
+    <section class="c-book">
+        <div class="c-book__bg">
+            <picture>  
+                <!-- Source for mobile devices -->  
+                <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/book-bg.webp">  
+                <!-- Source for tablet devices -->  
+                <source media="(min-width: 768px) and (max-width: 1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/book-bg.webp">  
+                <!-- Source for desktop devices -->  
+                <source media="(min-width: 1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/book-bg.webp">  
+                <!-- Fallback image for browsers that do not support `<picture>` -->  
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/book-bg.webp" alt="">  
+            </picture>  
+        </div>
+        <div class="o-container o-relative">
+            <div class="o-grid">
+                <div class="o-grid__col c-book__content">
+                    <h3 class="c-title">Book a Table</h3>
+                    <p>When we first opened our restaturant, it didn't take a long time for us to prove our diffrence. </p>
+                </div>
+                <div class="o-grid__col c-book__form">
+                    <div class="c-book__box o-box">
+                        <form action="" method="post" class="c-form">
+                            <div class="c-form__filed">
+                                <label class="c-form__lable" for="book-name">your name</label>
+                                <input class="c-form__input" id="book-name" type="text">
+                            </div>
+                            <div class="c-form__filed">
+                                <label class="c-form__lable" for="book-phone">your phone</label>
+                                <input class="c-form__input" id="book-phone" type="phone">
+                            </div>
+                            <div class="c-form__filed">
+                                <label class="c-form__lable" for="book-email">your email</label>
+                                <input class="c-form__input" id="book-email" type="email">
+                            </div>
+                            <div class="c-form__filed">
+                                <label class="c-form__lable" for="book-date">date</label>
+                                <input class="c-form__input" id="book-date" type="date" placeholder="Aug 27, 2019" pattern="[A-Za-z]{3} \d{1,2}, \d{4}">
+                            </div>
+                            <div class="c-form__filed">
+                                <label class="c-form__lable" for="book-time">time</label>
+                                <input class="c-form__input" id="book-time" type="time" value="18:00" step="60">
+                            </div>
+                            <div class="c-form__filed">
+                                <label class="c-form__lable" for="book-number">number of people</label>
+                                <div class="c-form__input__number">
+                                    <button class="c-form__input__number__btn js-input-decrease-btn">
+                                        <svg width="13" height="2" viewBox="0 0 13 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.4238 1.80838H0.423828V0H12.4238V1.80838Z" fill="#909090"/>
+                                        </svg>
+                                    </button>
+                                    <input class="c-form__input js-book-number" id="book-number" type="number" value="1" min="1" step="1">
+                                    <button class="c-form__input__number__btn js-input-increase-btn">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.93585 6.41509H15.0642V9.0566H8.93585V16H6.1283V9.0566H0V6.41509H6.1283V0H8.93585V6.41509Z" fill="#909090"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <button type="submit" class="c-btn c-btn--primary">Book Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <?php wp_footer(); ?>
 </body>
