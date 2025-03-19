@@ -52,13 +52,4 @@ img {
 .o-grid{
   display: grid;
   gap: 16px; /* Adjust the gap between items as needed */  
-  &--2col {  
-      // grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */ 
-      // grid-template-columns: 1fr 480px; /* Left column takes remaining space, right column is fixed at 480px */  
-      // grid-template-columns: 480px 80px 480px; /* Desktop view */  
-      // gap: 80px; /* Space between columns */  
-      // @include respond-to(tablet) {  
-      //   grid-template-columns: 1fr;
-      // }
-  }
 }

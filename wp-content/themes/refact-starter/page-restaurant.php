@@ -89,7 +89,7 @@
     <section class="c-block c-block--overlay-col">
         <div class="o-container">
             <div class="c-block__box">
-                <div class="o-grid o-grid--2col">
+                <div class="o-grid">
                     <div class="o-grid__item">
                         <h2 class="c-title">Why Customers Like us?</h2>
                         <p>When we first opened our restaturant, it didn't take a long time ofr us to prove our diffrence.</p>
