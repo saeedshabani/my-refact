@@ -1,5 +1,16 @@
 @use '../settings/mq.scss' as *;
+@use '../settings/mixins.scss' as *;
 
-.site-footer {
-  background-color: #fff;
+.c-footer {
+  text-align: center;
+  border-top: 1px solid #353535;
+  color: var(--wp--preset--color--gray); 
+  padding: 2rem 0 5.2rem 0;
+  font-size: 0.9rem;
+  @include respond-to(tablet) {
+    padding-bottom: 2.8rem;
+  }
+  p{
+    margin: 0;
+  }
 }

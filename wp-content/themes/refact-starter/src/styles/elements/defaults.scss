@@ -1,6 +1,10 @@
 @use '../settings/mq.scss' as *;
 @use '../settings/mixins.scss' as *;
 
+// html{
+//   font-size: 20px;
+// }
+
 *, *::before, *::after {
 	box-sizing: border-box;
 }
@@ -53,6 +57,9 @@ img {
   display: grid;
   gap: 16px; /* Adjust the gap between items as needed */ 
   grid-template-columns: 1fr 1fr;
+  &--3col{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .o-box{

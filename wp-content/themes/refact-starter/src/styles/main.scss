@@ -1,8 +1,10 @@
 @use 'elements/defaults.scss';
 @use 'plugins/Flickity.scss';
+@use 'plugins/mapbox-gl.scss';
 
 @use 'components/section.scss';
 @use 'components/btn.scss';
+@use 'components/icon-info.scss';
 @use 'components/price.scss';
 @use 'components/title.scss';
 @use 'components/block.scss';
@@ -13,6 +15,7 @@
 @use 'components/slider.scss';
 @use 'components/book.scss';
 @use 'components/form.scss';
+@use 'components/contact.scss';
 
 @use 'partials/header.scss';
 @use 'partials/footer.scss';

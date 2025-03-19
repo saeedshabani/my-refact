@@ -1,0 +1,33 @@
+@use '../settings/mixins.scss' as *;
+
+.c-icon-info{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    @include respond-to(tablet) {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.9rem;
+    }
+    @include respond-to(mobile) {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    &__icon{
+        width: 1.6rem;
+        height: auto;
+        @include respond-to(tablet) {
+            width: 1.7rem;
+        }
+        @include respond-to(tablet) {
+            width: 1.6rem;
+        }
+    }
+    &__text{
+        font-size: 1.1rem;
+        @include respond-to(tablet) {
+            font-size: 1.2rem;
+        }
+    }
+}
