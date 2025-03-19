@@ -41,14 +41,20 @@
     }
     input,
     &__input{
-        @include trans;
-        border: 1px solid var(--wp--preset--color--white);
-        background: #2f2928;
-        font-size: 0.9rem;
-        line-height: 1.6rem;
-        padding: 0.7rem 1rem;
-        outline: none;  
-        letter-spacing: 2px;
+        &,
+        &[type="date"], 
+        &[type="time"]{
+            @include trans;
+            border: 1px solid var(--wp--preset--color--white);
+            background: #2f2928;
+            font-size: 0.9rem;
+            line-height: 1.6rem;
+            padding: 0.7rem 1rem;
+            outline: none;  
+            letter-spacing: 2px;
+            width: 100%;
+            display: block;
+        }
         &,
         &::placeholder{
             color: var(--wp--preset--color--white);
